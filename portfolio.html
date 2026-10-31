@@ -1,232 +1,622 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portfolio</title>
+  <title>Jerin Akter Eva | Portfolio</title>
+
   <link rel="stylesheet" href="portfolio.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
-<body>
+
+<body class="bg-white text-gray-800">
+
+  <!-- Header -->
+
   <header>
     <nav>
- 
-      <div class="nav2">
 
-        <div class="logo"><p>J</p></div>
-        <div><p>Jerin Akter eva</p></div>
+```
+  <div class="nav2 flex items-center gap-3">
+
+    <div class="logo w-10 h-10 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold">
+      <p>J</p>
     </div>
-         <input type="checkbox" id="menu-toggle">
-<label for="menu-toggle" class="menu-icon">☰</label>
-     <div class="nav1"> <div><a href="#home">HOME</a></div>
-      <div><a href="#about">ABOUT</a></div>
-      <div><a href="#process">PROCESS</a></div>
-      
-      <div><a href="#services">SERVICES</a></div>
-      <div><a href="#portfolio">PORTFOLIO</a></div>
-      <div><a href="#contact">CONTACT</a></div>
-      </div>
-    </nav>
+
+    <div>
+      <p class="font-bold text-lg text-gray-900">Jerin Akter Eva</p>
+    </div>
+
+  </div>
+
+  <input type="checkbox" id="menu-toggle">
+
+  <label for="menu-toggle" class="menu-icon">☰</label>
+
+  <div class="nav1">
+    <div><a href="#home" class="hover:text-purple-600 transition">HOME</a></div>
+    <div><a href="#about" class="hover:text-purple-600 transition">ABOUT</a></div>
+    <div><a href="#process" class="hover:text-purple-600 transition">PROCESS</a></div>
+    <div><a href="#services" class="hover:text-purple-600 transition">SERVICES</a></div>
+    <div><a href="#portfolio" class="hover:text-purple-600 transition">PORTFOLIO</a></div>
+    <div><a href="#contact" class="hover:text-purple-600 transition">CONTACT</a></div>
+  </div>
+
+</nav>
+```
 
   </header>
+
   <main>
-  <section id="home">
-    <div class="aboutmyself">
-      <div class="info">
-      <h1>Jerin Akter Eva</h1>
-      <p>I'm a passionate aspiring Full Stack Web Developer focused on building modern, responsive, and user-friendly web applications. I'm currently learning HTML, CSS, JavaScript, and modern web technologies to turn creative ideas into functional digital experiences.</p>
-      <button>Say Hello!</button>
-      </div>
-      <div class="box">
+
+```
+<!-- Home Section -->
+<section id="home">
+
+  <div class="aboutmyself">
+
+    <div class="info">
+
+      <h1 class="text-4xl md:text-5xl font-bold text-purple-600 mb-5">
+        Jerin Akter Eva
+      </h1>
+
+      <p class="text-base md:text-lg leading-8 text-gray-600">
+        I'm a passionate aspiring Full Stack Web Developer focused on building modern, responsive, and user-friendly web applications. I'm currently learning HTML, CSS, JavaScript, and modern web technologies to turn creative ideas into functional digital experiences.
+      </p>
+
+      <button class="mt-6 px-7 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-800 transition duration-300">
+        Say Hello!
+      </button>
+
+    </div>
+
+    <div class="box">
+
       <div class="boxexperience">Learning Experience</div>
+
       <div class="boxNproject">Projects Completed</div>
+
       <div class="boxHclint">Technologies Learning</div>
-      </div>
-    </div>
-  <div class="myimage"><img alt="myimage" src="portfolioimage.jpg"></div>
-  </section>
-  <section id="about">
-    <div class="about-left">
-      <img src="portfolioimag2.jpg" alt="Portrait of Jerin Akter Eva">
-       <div class="social-media">
-        <a href="https://www.facebook.com/">facebook</a>
-        <a href="https://www.instagram.com/">instagram</a>
-        <a href="https://www.linkedin.com/">linkedin</a>
-        <a href="https://github.com/">github</a>
-      </div>
-    </div>
-    <div class="about-right">
-      <h2>Get to Know Me</h2>
-      <p>I am an aspiring Full Stack Web Developer with a passion for creating modern, responsive, and user-friendly web applications. I am currently developing my skills in HTML, CSS, JavaScript, and other modern web technologies.</p>
-
-      <p>My goal is to become a skilled Full Stack Developer who can build creative and functional digital solutions. I enjoy learning new technologies, solving problems, and turning ideas into real-world projects.</p>
-      <button>my projects</button>
-      <button>downlode cv</button>
-    </div>
-  </section>
-
-
-
-  <section id="process">
-
-    <div class="processleft">
-      <h2>Work Process</h2>
-      <p>I believe every great website starts with a clear plan. My approach combines creativity, thoughtful planning, and clean code to build modern and user-friendly web experiences. <br>From understanding ideas to designing and developing websites, I focus on every detail to create responsive, functional, and meaningful digital experiences.</p>
-    </div>
-
-    <div class="processright">
-      <article>
-        <div></div>
-        <h3>1. Research</h3>
-        <p>I start by understanding the project goals, identifying user needs, and gathering ideas to create a clear development plan.</p>
-      </article>
-      <article>
-        <div></div>
-        <h3>2. Analyze</h3>
-        <p>I analyze the requirements, organize the content, and choose the right tools and technologies for the project.</p>
-      </article>
-      <article>
-        <div></div>
-        <h3>3. Design</h3>
-        <p>I create clean and user-friendly layouts, focusing on visual balance, simplicity, and responsive design.</p>
-      </article>
-      <article>
-        <div></div>
-        <h3>4. Launch</h3>
-        <p>I develop, test, and improve the website to ensure it works smoothly across different devices and screen sizes.</p>
-      </article>
-    
-    </div>
-  </section>
-
-
-
-   <section id="portfolio">
-
-    <div class="portfolioup">
-      <h2>portfolio</h2>
-      <p>Here's a selection of my recent projects, showcasing my skills in web development, responsive design, and creating user-friendly digital experiences.
-</p>
 
     </div>
 
-    <div class="portfoliodown">
+  </div>
 
-      <article>
-        <img src="portfoliocard1.png" alt="Personal portfolio website preview">
-        <p>Personal Website</p>
-        <h3> Personal Portfolio Website</h3>
-        <p>A personal website designed to introduce myself, showcase my skills, and share my journey as an aspiring Full Stack Web Developer.</p>
-        <a href="">View Project</a>
-      </article>
-      <article>
-        <img src="portfoliocard2.png" alt="">
-        <p>Web Design</p>
-        <h3>Responsive Landing Page</h3>
-        <p>A clean and modern landing page with an organized layout, attractive design, and responsive elements for different screen sizes.</p> 
-        <a href="">View Project</a>
-      </article>
-         <article>
-        <img src="portfoliocard3.png" alt="">
-        <p>HTML & CSS</p>
-        <h3>Product Showcase Website</h3>
-        <p> A simple product showcase page featuring well-organized product information, clean layouts, and user-friendly design.</p>
-        <a href="">View Project</a>
-      </article>
+  <div class="myimage">
+    <img alt="myimage" src="portfolioimage.jpg">
+  </div>
 
-    </div>
-   </section>
-
-<section id="projectidea">
-  <h2>Do you have a project idea?</h2>
-  <h2>lets discuss your idea</h2>
-  <p>i'm always open to discussing new project and creative ideas. let's connect and build somthing amazing together.</p>
-  <a href="#contact">let's work together!!</a>
 </section>
 
 
+<!-- About Section -->
+<section id="about">
 
-  <section id="services">
-    <div class="service-left">
-      <h2>What I do</h2>
-      <p>I specialize in building modern, responsive, and user-friendly websites using modern web technologies.</p>
-      <p>I focus on creating clean designs, writing efficient code, and developing functional web applications that provide a great user experience.</p>
-      <button>Say Hello!</button>
-    </div>
-    <div class="service-right">
-      <div class="service-card">
-        <h3>Frontend Development</h3>
-        <p>I create responsive and interactive user interfaces using HTML, CSS, JavaScript, and modern frontend technologies</p>
-      </div>
-      <div class="service-card">
-        <h3>Responsive Web Design</h3>
-        <p>I build websites that adapt smoothly to different screen sizes, ensuring a consistent experience across desktops, tablets, and mobile devices</p>
-      </div>
-      <div class="service-card">
-        <h3>Full Stack Development</h3>
-        <p>I develop dynamic web applications by combining frontend and backend technologies, focusing on functionality, performance, and scalability.</p>
-      </div>
-    </div>
-  </section>
-  
-  <section id="contact">
-    <div class="contact-left">
-      <h2>Let’s discuss your Project</h2>
-      <p>I'm available for freelance work. Drop me a line if you have a project you think I'd be a good fit for.</p>
-      <div class="address"><address>nobinogor,saver,dhaka,bangladesh</address></div>
-      <div class="email">eva018@diu.edu.bd</div>
-      <div class="number">01*********</div>
+  <div class="about-left">
 
-      <div class="social-media">
-        <a href="https://www.facebook.com/">facebook</a>
-        <a href="https://www.instagram.com/">instagram</a>
-        <a href="https://www.linkedin.com/">linkedin</a>
-        <a href="https://github.com/">github</a>
-      </div>
+    <img src="portfolioimag2.jpg" alt="Portrait of Jerin Akter Eva">
+
+    <div class="social-media">
+
+      <a href="https://www.facebook.com/" class="text-purple-600 hover:text-purple-800 transition">facebook</a>
+
+      <a href="https://www.instagram.com/" class="text-purple-600 hover:text-purple-800 transition">instagram</a>
+
+      <a href="https://www.linkedin.com/" class="text-purple-600 hover:text-purple-800 transition">linkedin</a>
+
+      <a href="https://github.com/" class="text-purple-600 hover:text-purple-800 transition">github</a>
 
     </div>
-    <div class="contact-right">
-      <p></p>
-      <form action="">
-        <label for="name" >Name</label>
-        <input type="text" id="name" required>
-        <label for="email">email</label>
-         <input type="email" id="email" required>
-         <label for="address">location</label>
-         <input type="text" id="address" required>
-         <label for="budget">budget</label>
-         <input type="number" id="budget" required>
-         <label for="subject">subject</label>
-         <input type="text" id="subject" required>
-         <label for="message">message</label>
-        <textarea type="text" id="message" required></textarea>
 
-        <button type="submit">submit</button>
-      </form>
-      
-      <div class="gohome"><a href="#home">^</a></div>
+  </div>
+
+
+  <div class="about-right">
+
+    <h2 class="text-3xl font-bold text-gray-900 mb-5">
+      Get to Know Me
+    </h2>
+
+    <p class="text-gray-600 leading-8 mb-4">
+      I am an aspiring Full Stack Web Developer with a passion for creating modern, responsive, and user-friendly web applications. I am currently developing my skills in HTML, CSS, JavaScript, and other modern web technologies.
+    </p>
+
+    <p class="text-gray-600 leading-8 mb-5">
+      My goal is to become a skilled Full Stack Developer who can build creative and functional digital solutions. I enjoy learning new technologies, solving problems, and turning ideas into real-world projects.
+    </p>
+
+    <button class="px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-800 transition">
+      my projects
+    </button>
+
+    <button class="px-6 py-3 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition">
+      downlode cv
+    </button>
+
+  </div>
+
+</section>
+
+
+<!-- Work Process Section -->
+<section id="process">
+
+  <div class="processleft">
+
+    <h2 class="text-3xl font-bold text-gray-900 mb-5">
+      Work Process
+    </h2>
+
+    <p class="text-gray-600 leading-8">
+      I believe every great website starts with a clear plan. My approach combines creativity, thoughtful planning, and clean code to build modern and user-friendly web experiences.
+      <br>
+      From understanding ideas to designing and developing websites, I focus on every detail to create responsive, functional, and meaningful digital experiences.
+    </p>
+
+  </div>
+
+
+  <div class="processright">
+
+    <article class="bg-white rounded-xl p-5 shadow-md hover:shadow-xl transition duration-300">
+
+      <div></div>
+
+      <h3 class="text-xl font-bold text-purple-600 mb-3">1. Research</h3>
+
+      <p class="text-gray-600 leading-7">
+        I start by understanding the project goals, identifying user needs, and gathering ideas to create a clear development plan.
+      </p>
+
+    </article>
+
+
+    <article class="bg-white rounded-xl p-5 shadow-md hover:shadow-xl transition duration-300">
+
+      <div></div>
+
+      <h3 class="text-xl font-bold text-purple-600 mb-3">2. Analyze</h3>
+
+      <p class="text-gray-600 leading-7">
+        I analyze the requirements, organize the content, and choose the right tools and technologies for the project.
+      </p>
+
+    </article>
+
+
+    <article class="bg-white rounded-xl p-5 shadow-md hover:shadow-xl transition duration-300">
+
+      <div></div>
+
+      <h3 class="text-xl font-bold text-purple-600 mb-3">3. Design</h3>
+
+      <p class="text-gray-600 leading-7">
+        I create clean and user-friendly layouts, focusing on visual balance, simplicity, and responsive design.
+      </p>
+
+    </article>
+
+
+    <article class="bg-white rounded-xl p-5 shadow-md hover:shadow-xl transition duration-300">
+
+      <div></div>
+
+      <h3 class="text-xl font-bold text-purple-600 mb-3">4. Launch</h3>
+
+      <p class="text-gray-600 leading-7">
+        I develop, test, and improve the website to ensure it works smoothly across different devices and screen sizes.
+      </p>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- Portfolio Section -->
+<section id="portfolio">
+
+  <div class="portfolioup">
+
+    <h2 class="text-3xl font-bold text-gray-900 mb-4">
+      Portfolio
+    </h2>
+
+    <p class="text-gray-600 leading-8">
+      Here's a selection of my recent projects, showcasing my skills in web development, responsive design, and creating user-friendly digital experiences.
+    </p>
+
+  </div>
+
+
+  <div class="portfoliodown">
+
+    <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+
+      <img src="portfoliocard1.png" alt="Personal portfolio website preview">
+
+      <p class="text-purple-600 font-medium mt-4">Personal Website</p>
+
+      <h3 class="text-xl font-bold text-gray-900 my-3">
+        Personal Portfolio Website
+      </h3>
+
+      <p class="text-gray-600 leading-7">
+        A personal website designed to introduce myself, showcase my skills, and share my journey as an aspiring Full Stack Web Developer.
+      </p>
+
+      <a href="" class="inline-block mt-4 text-purple-600 font-semibold hover:text-purple-800 transition">
+        View Project
+      </a>
+
+    </article>
+
+
+    <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+
+      <img src="portfoliocard2.png" alt="Responsive landing page preview">
+
+      <p class="text-purple-600 font-medium mt-4">Web Design</p>
+
+      <h3 class="text-xl font-bold text-gray-900 my-3">
+        Responsive Landing Page
+      </h3>
+
+      <p class="text-gray-600 leading-7">
+        A clean and modern landing page with an organized layout, attractive design, and responsive elements for different screen sizes.
+      </p>
+
+      <a href="" class="inline-block mt-4 text-purple-600 font-semibold hover:text-purple-800 transition">
+        View Project
+      </a>
+
+    </article>
+
+
+    <article class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300">
+
+      <img src="portfoliocard3.png" alt="Product showcase website preview">
+
+      <p class="text-purple-600 font-medium mt-4">HTML & CSS</p>
+
+      <h3 class="text-xl font-bold text-gray-900 my-3">
+        Product Showcase Website
+      </h3>
+
+      <p class="text-gray-600 leading-7">
+        A simple product showcase page featuring well-organized product information, clean layouts, and user-friendly design.
+      </p>
+
+      <a href="" class="inline-block mt-4 text-purple-600 font-semibold hover:text-purple-800 transition">
+        View Project
+      </a>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- Project Idea Section -->
+<section id="projectidea" class="text-center bg-purple-600 text-white py-16 px-5">
+
+  <h2 class="text-3xl md:text-4xl font-bold mb-4">
+    Do you have a project idea?
+  </h2>
+
+  <h2 class="text-2xl font-semibold mb-5">
+    lets discuss your idea
+  </h2>
+
+  <p class="text-purple-100 leading-8 mb-6">
+    i'm always open to discussing new project and creative ideas. let's connect and build somthing amazing together.
+  </p>
+
+  <a href="#contact" class="inline-block bg-white text-purple-700 px-7 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+    let's work together!!
+  </a>
+
+</section>
+
+
+<!-- Services Section -->
+<section id="services">
+
+  <div class="service-left">
+
+    <h2 class="text-3xl font-bold text-gray-900 mb-5">
+      What I do
+    </h2>
+
+    <p class="text-gray-600 leading-8 mb-4">
+      I specialize in building modern, responsive, and user-friendly websites using modern web technologies.
+    </p>
+
+    <p class="text-gray-600 leading-8 mb-5">
+      I focus on creating clean designs, writing efficient code, and developing functional web applications that provide a great user experience.
+    </p>
+
+    <button class="px-7 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-800 transition">
+      Say Hello!
+    </button>
+
+  </div>
+
+
+  <div class="service-right">
+
+    <div class="service-card bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+
+      <h3 class="text-xl font-bold text-purple-600 mb-3">
+        Frontend Development
+      </h3>
+
+      <p class="text-gray-600 leading-7">
+        I create responsive and interactive user interfaces using HTML, CSS, JavaScript, and modern frontend technologies.
+      </p>
+
     </div>
-  </section>
- 
+
+
+    <div class="service-card bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+
+      <h3 class="text-xl font-bold text-purple-600 mb-3">
+        Responsive Web Design
+      </h3>
+
+      <p class="text-gray-600 leading-7">
+        I build websites that adapt smoothly to different screen sizes, ensuring a consistent experience across desktops, tablets, and mobile devices.
+      </p>
+
+    </div>
+
+
+    <div class="service-card bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+
+      <h3 class="text-xl font-bold text-purple-600 mb-3">
+        Full Stack Development
+      </h3>
+
+      <p class="text-gray-600 leading-7">
+        I develop dynamic web applications by combining frontend and backend technologies, focusing on functionality, performance, and scalability.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- Education Section -->
+<section id="education">
+
+  <div class="education-container">
+
+    <h2 class="text-3xl font-bold text-gray-900 mb-4">
+      My Education
+    </h2>
+
+    <p class="education-subtitle text-gray-500 mb-8">
+      My Academic Background
+    </p>
+
+
+    <div class="education-box">
+
+      <div class="education-card bg-white p-6 rounded-xl shadow-md border border-gray-200 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+        <h3 class="text-xl font-bold text-purple-600 mb-4">
+          Secondary School Certificate
+        </h3>
+
+        <h4 class="text-lg font-semibold text-gray-900 mb-3">
+          Sristy Central School & College
+        </h4>
+
+        <p class="text-gray-600 mb-2">Group: Science</p>
+
+        <p class="text-gray-600 mb-2">Passing Year: 2018</p>
+
+        <p class="text-gray-600">GPA: 4.80</p>
+
+      </div>
+
+
+      <div class="education-card bg-white p-6 rounded-xl shadow-md border border-gray-200 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+        <h3 class="text-xl font-bold text-purple-600 mb-4">
+          Higher Secondary Certificate
+        </h3>
+
+        <h4 class="text-lg font-semibold text-gray-900 mb-3">
+          Monipur High School & College
+        </h4>
+
+        <p class="text-gray-600 mb-2">Group: Science</p>
+
+        <p class="text-gray-600 mb-2">Passing Year: 2020</p>
+
+        <p class="text-gray-600">GPA: 4.67</p>
+
+      </div>
+
+
+      <div class="education-card bg-white p-6 rounded-xl shadow-md border border-gray-200 hover:shadow-xl hover:-translate-y-2 transition duration-300">
+
+        <h3 class="text-xl font-bold text-purple-600 mb-4">
+          University
+        </h3>
+
+        <h4 class="text-lg font-semibold text-gray-900 mb-3">
+          Daffodil International University
+        </h4>
+
+        <p class="text-gray-600 mb-2">Department: Architecture</p>
+
+        <p class="text-gray-600">Completed: 1 Semester</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact">
+
+  <div class="contact-left">
+
+    <h2 class="text-3xl font-bold text-gray-900 mb-5">
+      Let’s discuss your Project
+    </h2>
+
+    <p class="text-gray-600 leading-8 mb-5">
+      I'm available for freelance work. Drop me a line if you have a project you think I'd be a good fit for.
+    </p>
+
+    <div class="address">
+      <address>nobinogor,saver,dhaka,bangladesh</address>
+    </div>
+
+    <div class="email">eva018@diu.edu.bd</div>
+
+    <div class="number">01*********</div>
+
+
+    <div class="social-media">
+
+      <a href="https://www.facebook.com/" class="text-purple-600 hover:text-purple-800 transition">facebook</a>
+
+      <a href="https://www.instagram.com/" class="text-purple-600 hover:text-purple-800 transition">instagram</a>
+
+      <a href="https://www.linkedin.com/" class="text-purple-600 hover:text-purple-800 transition">linkedin</a>
+
+      <a href="https://github.com/" class="text-purple-600 hover:text-purple-800 transition">github</a>
+
+    </div>
+
+  </div>
+
+
+  <div class="contact-right">
+
+    <p></p>
+
+    <form action="">
+
+      <label for="name" class="font-semibold text-gray-700">Name</label>
+
+      <input type="text" id="name" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+
+
+      <label for="email" class="font-semibold text-gray-700">Email</label>
+
+      <input type="email" id="email" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+
+
+      <label for="address" class="font-semibold text-gray-700">Location</label>
+
+      <input type="text" id="address" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+
+
+      <label for="budget" class="font-semibold text-gray-700">Budget</label>
+
+      <input type="number" id="budget" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+
+
+      <label for="subject" class="font-semibold text-gray-700">Subject</label>
+
+      <input type="text" id="subject" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
+
+
+      <label for="message" class="font-semibold text-gray-700">Message</label>
+
+      <textarea id="message" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
+
+
+      <button type="submit" class="px-8 py-3 bg-purple-600 text-white rounded-lg font-semibold hover:bg-purple-800 transition duration-300">
+        Submit
+      </button>
+
+    </form>
+
+
+    <div class="gohome">
+      <a href="#home">^</a>
+    </div>
+
+  </div>
+
+</section>
+```
+
   </main>
 
+  <!-- Footer -->
 
-   <footer>
-    <div>
-      <div class="logo"><p>J</p></div>
-        <div><p>Jerin Akter eva</p></div>
-    </div>
-    <div>
-  <div class="nav1"> <div><a href="#home">HOME</a></div>
-      <div><a href="#about">ABOUT</a></div>
-      <div><a href="#process">PROCESS</a></div>
-      
-      <div><a href="#services">SERVICES</a></div>
-      <div><a href="#portfolio">PORTFOLIO</a></div>
-      <div><a href="#contact">CONTACT</a></div>
-      </div>
-      <div><p>Developed with ❤️ by Jerin Akter Eva</p></div>
-    </div>
-    <div><div class="gohome"><a href="#home">^</a></div></div>
+  <footer>
+
+```
+<div>
+
+  <div class="logo w-10 h-10 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold">
+    <p>J</p>
+  </div>
+
+  <div>
+    <p class="font-bold text-white">Jerin Akter Eva</p>
+  </div>
+
+</div>
+
+
+<div>
+
+  <div class="nav1">
+
+    <div><a href="#home">HOME</a></div>
+
+    <div><a href="#about">ABOUT</a></div>
+
+    <div><a href="#process">PROCESS</a></div>
+
+    <div><a href="#services">SERVICES</a></div>
+
+    <div><a href="#portfolio">PORTFOLIO</a></div>
+
+    <div><a href="#contact">CONTACT</a></div>
+
+  </div>
+
+  <div>
+    <p class="text-gray-300">
+      Developed with ❤️ by Jerin Akter Eva
+    </p>
+  </div>
+
+</div>
+
+
+<div>
+  <div class="gohome">
+    <a href="#home">^</a>
+  </div>
+</div>
+```
+
   </footer>
+
 </body>
+
 </html>

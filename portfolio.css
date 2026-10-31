@@ -66,7 +66,7 @@ header nav {
   border-bottom: 1px solid #e5e7eb;
 }
 
-/* Logo and Name */
+/* Logo */
 
 .nav2 {
   display: flex;
@@ -100,7 +100,7 @@ header nav {
   white-space: nowrap;
 }
 
-/* Navigation Links */
+/* Navigation */
 
 header .nav1 {
   display: flex;
@@ -164,8 +164,6 @@ header .nav1 a[href="#contact"] {
   background-color: #f8f9fc;
 }
 
-/* Left Content */
-
 .aboutmyself {
   display: flex;
   flex-direction: column;
@@ -207,7 +205,7 @@ header .nav1 a[href="#contact"] {
   background-color: #7119d0;
 }
 
-/* Statistics Boxes */
+/* Statistics */
 
 .box {
   display: grid;
@@ -259,8 +257,6 @@ header .nav1 a[href="#contact"] {
   background-color: white;
 }
 
-/* Left Side */
-
 .about-left {
   width: 100%;
 }
@@ -288,8 +284,6 @@ header .nav1 a[href="#contact"] {
 .social-media a:hover {
   color: #6817c2;
 }
-
-/* Right Side */
 
 .about-right h2 {
   font-size: clamp(28px, 3vw, 40px);
@@ -335,8 +329,6 @@ header .nav1 a[href="#contact"] {
   background-color: #f1f2f5;
 }
 
-/* Left */
-
 .processleft h2 {
   font-size: clamp(30px, 4vw, 45px);
   margin-bottom: 20px;
@@ -347,8 +339,6 @@ header .nav1 a[href="#contact"] {
   line-height: 1.8;
   font-size: 16px;
 }
-
-/* Right Cards */
 
 .processright {
   display: grid;
@@ -384,8 +374,6 @@ header .nav1 a[href="#contact"] {
   background-color: #f3e7ff;
   color: #942cff;
 }
-
-/* Decorative symbols for empty icon divs */
 
 .processright article:nth-child(1) > div::after {
   content: "⌕";
@@ -427,8 +415,6 @@ header .nav1 a[href="#contact"] {
   background-color: white;
 }
 
-/* Heading */
-
 .portfolioup {
   text-align: center;
   max-width: 650px;
@@ -446,8 +432,6 @@ header .nav1 a[href="#contact"] {
   font-size: 17px;
   line-height: 1.7;
 }
-
-/* Project Cards */
 
 .portfoliodown {
   display: grid;
@@ -582,8 +566,6 @@ header .nav1 a[href="#contact"] {
   background-color: #f8f9fc;
 }
 
-/* Left */
-
 .service-left h2 {
   font-size: clamp(30px, 4vw, 42px);
   margin-bottom: 20px;
@@ -608,8 +590,6 @@ header .nav1 a[href="#contact"] {
   font-weight: bold;
   cursor: pointer;
 }
-
-/* Right Cards */
 
 .service-right {
   display: flex;
@@ -645,7 +625,83 @@ header .nav1 a[href="#contact"] {
 
 
 /* =================================
-   9. CONTACT SECTION
+   9. EDUCATION SECTION
+================================= */
+
+#education {
+  background-color: #f8f9fc;
+  padding: 80px clamp(20px, 5vw, 80px);
+}
+
+.education-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.education-container h2 {
+  text-align: center;
+  font-size: clamp(30px, 4vw, 42px);
+  color: #172033;
+  margin-bottom: 12px;
+}
+
+.education-subtitle {
+  text-align: center;
+  color: #68758a;
+  font-size: 17px;
+  margin-bottom: 50px;
+}
+
+.education-box {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.education-card {
+  min-width: 0;
+  padding: 30px 25px;
+
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-left: 4px solid #942cff;
+  border-radius: 10px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.09);
+  border-left-color: #7119d0;
+}
+
+.education-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #172033;
+  margin-bottom: 15px;
+}
+
+.education-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #942cff;
+  margin-bottom: 18px;
+}
+
+.education-card p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #68758a;
+  margin-bottom: 8px;
+}
+
+
+/* =================================
+   10. CONTACT SECTION
 ================================= */
 
 #contact {
@@ -656,8 +712,6 @@ header .nav1 a[href="#contact"] {
 
   background-color: white;
 }
-
-/* Left */
 
 .contact-left h2 {
   font-size: clamp(28px, 3vw, 38px);
@@ -687,8 +741,6 @@ header .nav1 a[href="#contact"] {
 .contact-left address {
   font-style: normal;
 }
-
-/* Right */
 
 .contact-right > p {
   color: #68758a;
@@ -759,7 +811,7 @@ header .nav1 a[href="#contact"] {
 
 
 /* =================================
-   10. GO HOME BUTTON
+   11. GO HOME BUTTON
 ================================= */
 
 .gohome {
@@ -786,7 +838,7 @@ header .nav1 a[href="#contact"] {
 
 
 /* =================================
-   11. FOOTER
+   12. FOOTER
 ================================= */
 
 footer {
@@ -859,13 +911,11 @@ footer > div:nth-child(2) p {
 
 
 /* =================================
-   12. TABLET RESPONSIVE
+   13. TABLET RESPONSIVE
    1024px and below
 ================================= */
 
 @media screen and (max-width: 1024px) {
-
-  /* Navbar */
 
   header nav {
     flex-wrap: wrap;
@@ -900,49 +950,42 @@ footer > div:nth-child(2) p {
     display: flex;
   }
 
-  /* Home */
-
   #home {
     grid-template-columns: 1fr 0.8fr;
     gap: 20px;
   }
 
-  /* About */
-
   #about {
     gap: 35px;
   }
-
-  /* Process */
 
   #process {
     grid-template-columns: 1fr;
     gap: 35px;
   }
 
-  /* Portfolio */
-
   .portfoliodown {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
-  /* Services */
 
   #services {
     gap: 30px;
   }
 
-  /* Contact */
-
   #contact {
     gap: 35px;
   }
 
+  /* Education */
+
+  .education-box {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 
 /* =================================
-   13. MOBILE RESPONSIVE
+   14. MOBILE RESPONSIVE
    768px and below
 ================================= */
 
@@ -951,8 +994,6 @@ footer > div:nth-child(2) p {
   section {
     padding: 55px 25px;
   }
-
-  /* Home */
 
   #home {
     grid-template-columns: 1fr;
@@ -973,8 +1014,6 @@ footer > div:nth-child(2) p {
     max-height: 450px;
   }
 
-  /* About */
-
   #about {
     grid-template-columns: 1fr;
     gap: 35px;
@@ -984,8 +1023,6 @@ footer > div:nth-child(2) p {
     max-height: 400px;
   }
 
-  /* Process */
-
   #process {
     grid-template-columns: 1fr;
   }
@@ -994,38 +1031,43 @@ footer > div:nth-child(2) p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  /* Portfolio */
-
   .portfoliodown {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
-  /* Services */
 
   #services {
     grid-template-columns: 1fr;
     gap: 35px;
   }
 
-  /* Contact */
-
   #contact {
     grid-template-columns: 1fr;
     gap: 40px;
   }
 
-  /* Footer */
+  /* Education */
+
+  #education {
+    padding: 55px 25px;
+  }
+
+  .education-box {
+    grid-template-columns: 1fr;
+  }
+
+  .education-subtitle {
+    margin-bottom: 35px;
+  }
 
   footer {
     flex-direction: column;
     text-align: center;
   }
-
 }
 
 
 /* =================================
-   14. SMALL MOBILE RESPONSIVE
+   15. SMALL MOBILE RESPONSIVE
    480px and below
 ================================= */
 
@@ -1034,8 +1076,6 @@ footer > div:nth-child(2) p {
   section {
     padding: 45px 18px;
   }
-
-  /* Navbar */
 
   header nav {
     padding: 10px 15px;
@@ -1063,8 +1103,6 @@ footer > div:nth-child(2) p {
     font-size: 25px;
   }
 
-  /* Home */
-
   .info h1 {
     font-size: 32px;
   }
@@ -1081,8 +1119,6 @@ footer > div:nth-child(2) p {
     padding: 15px;
   }
 
-  /* About */
-
   .about-right h2 {
     font-size: 28px;
   }
@@ -1094,8 +1130,6 @@ footer > div:nth-child(2) p {
   .social-media {
     gap: 15px;
   }
-
-  /* Process */
 
   .processleft h2 {
     font-size: 30px;
@@ -1113,8 +1147,6 @@ footer > div:nth-child(2) p {
     padding: 25px;
   }
 
-  /* Portfolio */
-
   .portfoliodown {
     grid-template-columns: 1fr;
   }
@@ -1131,6 +1163,28 @@ footer > div:nth-child(2) p {
     font-size: 15px;
   }
 
+  /* Education */
+
+  #education {
+    padding: 45px 18px;
+  }
+
+  .education-container h2 {
+    font-size: 30px;
+  }
+
+  .education-subtitle {
+    font-size: 15px;
+  }
+
+  .education-card {
+    padding: 25px 20px;
+  }
+
+  .education-card h3 {
+    font-size: 19px;
+  }
+
   /* Project Idea */
 
   #projectidea {
@@ -1145,8 +1199,6 @@ footer > div:nth-child(2) p {
     font-size: 15px;
   }
 
-  /* Services */
-
   .service-left h2 {
     font-size: 30px;
   }
@@ -1154,8 +1206,6 @@ footer > div:nth-child(2) p {
   .service-card {
     padding: 20px;
   }
-
-  /* Contact */
 
   .contact-left h2 {
     font-size: 28px;
@@ -1169,8 +1219,6 @@ footer > div:nth-child(2) p {
     gap: 8px;
   }
 
-  /* Footer */
-
   footer {
     padding: 30px 18px;
   }
@@ -1182,12 +1230,11 @@ footer > div:nth-child(2) p {
   footer .nav1 a {
     font-size: 12px;
   }
-
 }
 
 
 /* =================================
-   15. EXTRA SMALL MOBILE
+   16. EXTRA SMALL MOBILE
    360px and below
 ================================= */
 
