@@ -1,6 +1,4 @@
-/* =================================
-   1. GLOBAL SETTINGS
-================================= */
+
 
 * {
   margin: 0;
@@ -19,6 +17,7 @@ body {
   background-color: #ffffff;
   line-height: 1.6;
   overflow-x: hidden;
+   font-family: 'Poppins', sans-serif;
 }
 
 img {
@@ -42,10 +41,6 @@ section {
   padding: 80px clamp(20px, 5vw, 80px);
 }
 
-
-/* =================================
-   2. HEADER & NAVBAR
-================================= */
 
 header {
   width: 100%;
@@ -100,7 +95,7 @@ header nav {
   white-space: nowrap;
 }
 
-/* Navigation */
+
 
 header .nav1 {
   display: flex;
@@ -136,7 +131,7 @@ header .nav1 a[href="#contact"] {
   font-weight: bold;
 }
 
-/* Hamburger */
+
 
 #menu-toggle {
   display: none;
@@ -149,10 +144,6 @@ header .nav1 a[href="#contact"] {
   color: #172033;
 }
 
-
-/* =================================
-   3. HOME SECTION
-================================= */
 
 #home {
   display: grid;
@@ -205,7 +196,7 @@ header .nav1 a[href="#contact"] {
   background-color: #7119d0;
 }
 
-/* Statistics */
+
 
 .box {
   display: grid;
@@ -225,7 +216,7 @@ header .nav1 a[href="#contact"] {
   font-weight: bold;
 }
 
-/* Profile Image */
+
 
 .myimage {
   width: 100%;
@@ -243,10 +234,6 @@ header .nav1 a[href="#contact"] {
   object-position: center;
 }
 
-
-/* =================================
-   4. ABOUT SECTION
-================================= */
 
 #about {
   display: grid;
@@ -316,9 +303,7 @@ header .nav1 a[href="#contact"] {
 }
 
 
-/* =================================
-   5. PROCESS SECTION
-================================= */
+
 
 #process {
   display: grid;
@@ -407,9 +392,7 @@ header .nav1 a[href="#contact"] {
 }
 
 
-/* =================================
-   6. PORTFOLIO SECTION
-================================= */
+
 
 #portfolio {
   background-color: white;
@@ -503,9 +486,7 @@ header .nav1 a[href="#contact"] {
 }
 
 
-/* =================================
-   7. PROJECT IDEA SECTION
-================================= */
+
 
 #projectidea {
   display: flex;
@@ -553,9 +534,7 @@ header .nav1 a[href="#contact"] {
 }
 
 
-/* =================================
-   8. SERVICES SECTION
-================================= */
+
 
 #services {
   display: grid;
@@ -624,9 +603,7 @@ header .nav1 a[href="#contact"] {
 }
 
 
-/* =================================
-   9. EDUCATION SECTION
-================================= */
+
 
 #education {
   background-color: #f8f9fc;
@@ -700,9 +677,7 @@ header .nav1 a[href="#contact"] {
 }
 
 
-/* =================================
-   10. CONTACT SECTION
-================================= */
+
 
 #contact {
   display: grid;
@@ -810,9 +785,7 @@ header .nav1 a[href="#contact"] {
 }
 
 
-/* =================================
-   11. GO HOME BUTTON
-================================= */
+
 
 .gohome {
   display: flex;
@@ -837,9 +810,7 @@ header .nav1 a[href="#contact"] {
 }
 
 
-/* =================================
-   12. FOOTER
-================================= */
+
 
 footer {
   display: flex;
@@ -910,10 +881,7 @@ footer > div:nth-child(2) p {
 }
 
 
-/* =================================
-   13. TABLET RESPONSIVE
-   1024px and below
-================================= */
+
 
 @media screen and (max-width: 1024px) {
 
@@ -984,10 +952,7 @@ footer > div:nth-child(2) p {
 }
 
 
-/* =================================
-   14. MOBILE RESPONSIVE
-   768px and below
-================================= */
+
 
 @media screen and (max-width: 768px) {
 
@@ -1045,7 +1010,7 @@ footer > div:nth-child(2) p {
     gap: 40px;
   }
 
-  /* Education */
+  
 
   #education {
     padding: 55px 25px;
@@ -1066,10 +1031,7 @@ footer > div:nth-child(2) p {
 }
 
 
-/* =================================
-   15. SMALL MOBILE RESPONSIVE
-   480px and below
-================================= */
+
 
 @media screen and (max-width: 480px) {
 
@@ -1233,11 +1195,6 @@ footer > div:nth-child(2) p {
 }
 
 
-/* =================================
-   16. EXTRA SMALL MOBILE
-   360px and below
-================================= */
-
 @media screen and (max-width: 360px) {
 
   header nav {
@@ -1271,4 +1228,18 @@ footer > div:nth-child(2) p {
     padding: 20px;
   }
 
+}
+.contact-right {
+  position: relative;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
 }

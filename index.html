@@ -8,19 +8,34 @@
   <title>Jerin Akter Eva | Portfolio</title>
 
   <link rel="stylesheet" href="portfolio.css">
+  <script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      }
+    });
+  });
+
+  document.querySelectorAll(".reveal").forEach((element) => {
+    observer.observe(element);
+  });
+</script>
 
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body class="bg-white text-gray-800">
 
-  <!-- Header -->
+  
 
   <header>
     <nav>
 
-```
+
   <div class="nav2 flex items-center gap-3">
 
     <div class="logo w-10 h-10 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold">
@@ -28,7 +43,7 @@
     </div>
 
     <div>
-      <p class="font-bold text-lg text-gray-900">Jerin Akter Eva</p>
+      <p class="font-bold text-lg text-gray-900 ">Jerin Akter Eva</p>
     </div>
 
   </div>
@@ -47,21 +62,19 @@
   </div>
 
 </nav>
-```
+
 
   </header>
 
   <main>
 
-```
-<!-- Home Section -->
 <section id="home">
 
   <div class="aboutmyself">
 
     <div class="info">
 
-      <h1 class="text-4xl md:text-5xl font-bold text-purple-600 mb-5">
+      <h1 class="text-4xl md:text-5xl font-bold text-purple-600 mb-5 .reveal ">
         Jerin Akter Eva
       </h1>
 
@@ -88,18 +101,18 @@
   </div>
 
   <div class="myimage">
-    <img alt="myimage" src="portfolioimage.jpg">
+    <img alt="myimage" src="jerin.jpeg">
   </div>
 
 </section>
 
 
-<!-- About Section -->
+
 <section id="about">
 
   <div class="about-left">
 
-    <img src="portfolioimag2.jpg" alt="Portrait of Jerin Akter Eva">
+    <img src="jerin.jpeg" alt="Portrait of Jerin Akter Eva">
 
     <div class="social-media">
 
@@ -142,8 +155,6 @@
 
 </section>
 
-
-<!-- Work Process Section -->
 <section id="process">
 
   <div class="processleft">
@@ -219,7 +230,7 @@
 </section>
 
 
-<!-- Portfolio Section -->
+
 <section id="portfolio">
 
   <div class="portfolioup">
@@ -304,7 +315,7 @@
 </section>
 
 
-<!-- Project Idea Section -->
+
 <section id="projectidea" class="text-center bg-purple-600 text-white py-16 px-5">
 
   <h2 class="text-3xl md:text-4xl font-bold mb-4">
@@ -326,7 +337,7 @@
 </section>
 
 
-<!-- Services Section -->
+
 <section id="services">
 
   <div class="service-left">
@@ -395,7 +406,7 @@
 </section>
 
 
-<!-- Education Section -->
+
 <section id="education">
 
   <div class="education-container">
@@ -472,7 +483,7 @@
 </section>
 
 
-<!-- Contact Section -->
+
 <section id="contact">
 
   <div class="contact-left">
@@ -552,22 +563,20 @@
     </form>
 
 
-    <div class="gohome">
-      <a href="#home">^</a>
-    </div>
+ 
 
   </div>
 
 </section>
-```
+
 
   </main>
 
-  <!-- Footer -->
+
 
   <footer>
 
-```
+
 <div>
 
   <div class="logo w-10 h-10 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold">
