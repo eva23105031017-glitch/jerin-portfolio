@@ -1,0 +1,1227 @@
+/* =================================
+   1. GLOBAL SETTINGS
+================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #172033;
+  background-color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+section {
+  width: 100%;
+  padding: 80px clamp(20px, 5vw, 80px);
+}
+
+
+/* =================================
+   2. HEADER & NAVBAR
+================================= */
+
+header {
+  width: 100%;
+  position: relative;
+  z-index: 100;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 100%;
+  padding: 12px 30px;
+
+  background-color: #f1f2f5;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Logo and Name */
+
+.nav2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.nav2 .logo {
+  width: 60px;
+  height: 60px;
+  flex: 0 0 60px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+  background-color: #942cff;
+  color: white;
+}
+
+.nav2 .logo p {
+  margin: 0;
+  font-size: 25px;
+  line-height: 1;
+}
+
+.nav2 > div:last-child p {
+  font-size: 20px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+/* Navigation Links */
+
+header .nav1 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+header .nav1 div {
+  display: flex;
+  align-items: center;
+}
+
+header .nav1 a {
+  display: block;
+  padding: 12px 15px;
+
+  color: #172033;
+  font-size: 15px;
+  font-weight: 500;
+
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+header .nav1 a:hover {
+  background-color: #942cff;
+  color: white;
+}
+
+header .nav1 a[href="#contact"] {
+  background-color: #942cff;
+  color: white;
+  font-weight: bold;
+}
+
+/* Hamburger */
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 28px;
+  color: #172033;
+}
+
+
+/* =================================
+   3. HOME SECTION
+================================= */
+
+#home {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: stretch;
+  gap: 30px;
+
+  padding: 60px clamp(20px, 5vw, 80px);
+  background-color: #f8f9fc;
+}
+
+/* Left Content */
+
+.aboutmyself {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 45px;
+
+  width: 100%;
+  min-width: 0;
+  padding: 30px 0;
+}
+
+.info h1 {
+  font-size: clamp(30px, 4vw, 52px);
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.info p {
+  color: #68758a;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.info button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
+
+  background-color: #942cff;
+  color: white;
+
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.info button:hover {
+  background-color: #7119d0;
+}
+
+/* Statistics Boxes */
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.box > div {
+  padding: 20px 10px;
+  text-align: center;
+
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Profile Image */
+
+.myimage {
+  width: 100%;
+  min-width: 0;
+  min-height: 400px;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.myimage img {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* =================================
+   4. ABOUT SECTION
+================================= */
+
+#about {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 70px;
+
+  background-color: white;
+}
+
+/* Left Side */
+
+.about-left {
+  width: 100%;
+}
+
+.about-left img {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.social-media {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.social-media a {
+  color: #942cff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.social-media a:hover {
+  color: #6817c2;
+}
+
+/* Right Side */
+
+.about-right h2 {
+  font-size: clamp(28px, 3vw, 40px);
+  margin-bottom: 20px;
+}
+
+.about-right p {
+  color: #68758a;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.about-right button {
+  padding: 13px 22px;
+  margin: 10px 10px 0 0;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: #942cff;
+  color: white;
+
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.about-right button:hover {
+  background-color: #7119d0;
+}
+
+
+/* =================================
+   5. PROCESS SECTION
+================================= */
+
+#process {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 50px;
+
+  background-color: #f1f2f5;
+}
+
+/* Left */
+
+.processleft h2 {
+  font-size: clamp(30px, 4vw, 45px);
+  margin-bottom: 20px;
+}
+
+.processleft p {
+  color: #68758a;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* Right Cards */
+
+.processright {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.processright article {
+  min-width: 0;
+  padding: 30px;
+
+  background-color: white;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.processright article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.processright article > div {
+  display: grid;
+  place-items: center;
+
+  width: 65px;
+  height: 65px;
+  margin-bottom: 25px;
+
+  border-radius: 8px;
+  background-color: #f3e7ff;
+  color: #942cff;
+}
+
+/* Decorative symbols for empty icon divs */
+
+.processright article:nth-child(1) > div::after {
+  content: "⌕";
+  font-size: 35px;
+}
+
+.processright article:nth-child(2) > div::after {
+  content: "↗";
+  font-size: 35px;
+}
+
+.processright article:nth-child(3) > div::after {
+  content: "✎";
+  font-size: 35px;
+}
+
+.processright article:nth-child(4) > div::after {
+  content: "▱";
+  font-size: 35px;
+}
+
+.processright article h3 {
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+.processright article p {
+  color: #68758a;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+
+/* =================================
+   6. PORTFOLIO SECTION
+================================= */
+
+#portfolio {
+  background-color: white;
+}
+
+/* Heading */
+
+.portfolioup {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 55px;
+}
+
+.portfolioup h2 {
+  font-size: clamp(32px, 4vw, 45px);
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.portfolioup p {
+  color: #68758a;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Project Cards */
+
+.portfoliodown {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.portfoliodown article {
+  min-width: 0;
+  overflow: hidden;
+
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  transition: 0.3s;
+}
+
+.portfoliodown article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.portfoliodown article img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.portfoliodown article > p,
+.portfoliodown article h3,
+.portfoliodown article > a {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.portfoliodown article > p:first-of-type {
+  margin-top: 22px;
+  margin-bottom: 10px;
+
+  color: #942cff;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.portfoliodown article h3 {
+  font-size: 19px;
+  margin-bottom: 12px;
+}
+
+.portfoliodown article > p:nth-of-type(2) {
+  color: #68758a;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.portfoliodown article a {
+  display: inline-block;
+  margin-bottom: 25px;
+
+  color: #942cff;
+  font-weight: bold;
+}
+
+.portfoliodown article a:hover {
+  color: #6817c2;
+}
+
+
+/* =================================
+   7. PROJECT IDEA SECTION
+================================= */
+
+#projectidea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  min-height: 400px;
+  padding: 70px 20px;
+
+  background-color: #101827;
+  color: white;
+}
+
+#projectidea h2 {
+  font-size: clamp(27px, 4vw, 45px);
+  line-height: 1.2;
+}
+
+#projectidea p {
+  max-width: 650px;
+  margin: 25px auto;
+
+  color: #aab5c7;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+#projectidea a {
+  display: inline-block;
+  padding: 14px 28px;
+
+  border-radius: 5px;
+  background-color: #942cff;
+  color: white;
+
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#projectidea a:hover {
+  background-color: #7119d0;
+}
+
+
+/* =================================
+   8. SERVICES SECTION
+================================= */
+
+#services {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 50px;
+
+  background-color: #f8f9fc;
+}
+
+/* Left */
+
+.service-left h2 {
+  font-size: clamp(30px, 4vw, 42px);
+  margin-bottom: 20px;
+}
+
+.service-left p {
+  color: #68758a;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.service-left button {
+  padding: 14px 28px;
+  margin-top: 10px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: #942cff;
+  color: white;
+
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Right Cards */
+
+.service-right {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.service-card {
+  padding: 25px;
+
+  background-color: white;
+  border-left: 4px solid #942cff;
+  border-radius: 8px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateX(5px);
+}
+
+.service-card h3 {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #68758a;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* =================================
+   9. CONTACT SECTION
+================================= */
+
+#contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 65px;
+  align-items: start;
+
+  background-color: white;
+}
+
+/* Left */
+
+.contact-left h2 {
+  font-size: clamp(28px, 3vw, 38px);
+  margin-bottom: 20px;
+}
+
+.contact-left > p {
+  color: #68758a;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.contact-left .address,
+.contact-left .email,
+.contact-left .number {
+  margin-bottom: 22px;
+  padding: 18px;
+
+  background-color: #f8f9fc;
+  border-radius: 8px;
+
+  color: #172033;
+  overflow-wrap: anywhere;
+}
+
+.contact-left address {
+  font-style: normal;
+}
+
+/* Right */
+
+.contact-right > p {
+  color: #68758a;
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.contact-right label {
+  color: #68758a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.contact-right input,
+.contact-right textarea,
+.contact-right select {
+  width: 100%;
+  min-width: 0;
+  padding: 13px 15px;
+
+  border: 1px solid #dfe3e9;
+  border-radius: 5px;
+
+  outline: none;
+  background-color: white;
+  color: #172033;
+}
+
+.contact-right input:focus,
+.contact-right textarea:focus,
+.contact-right select:focus {
+  border-color: #942cff;
+  box-shadow: 0 0 0 3px rgba(148, 44, 255, 0.1);
+}
+
+.contact-right textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.contact-right button {
+  align-self: flex-start;
+  margin-top: 15px;
+  padding: 13px 28px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: #942cff;
+  color: white;
+
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-right button:hover {
+  background-color: #7119d0;
+}
+
+
+/* =================================
+   10. GO HOME BUTTON
+================================= */
+
+.gohome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 55px;
+  height: 55px;
+
+  border-radius: 50%;
+  background-color: #942cff;
+}
+
+.gohome a {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.gohome:hover {
+  background-color: #7119d0;
+}
+
+
+/* =================================
+   11. FOOTER
+================================= */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  padding: 35px clamp(20px, 5vw, 80px);
+  background-color: #101827;
+  color: white;
+}
+
+footer > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+footer > div:first-child p {
+  font-weight: bold;
+}
+
+footer .logo {
+  width: 50px;
+  height: 50px;
+  flex: 0 0 50px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+  background-color: #942cff;
+}
+
+footer .logo p {
+  margin: 0;
+  font-size: 22px;
+}
+
+footer > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+footer .nav1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer .nav1 a {
+  color: #d1d5db;
+  font-size: 13px;
+}
+
+footer .nav1 a:hover {
+  color: #942cff;
+}
+
+footer > div:nth-child(2) p {
+  color: #aab5c7;
+  text-align: center;
+  font-size: 13px;
+}
+
+
+/* =================================
+   12. TABLET RESPONSIVE
+   1024px and below
+================================= */
+
+@media screen and (max-width: 1024px) {
+
+  /* Navbar */
+
+  header nav {
+    flex-wrap: wrap;
+  }
+
+  .menu-icon {
+    display: block;
+    margin-left: auto;
+  }
+
+  header .nav1 {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+
+    width: 100%;
+    margin-top: 15px;
+    gap: 5px;
+  }
+
+  header .nav1 div {
+    width: 100%;
+  }
+
+  header .nav1 a {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  #menu-toggle:checked ~ .nav1 {
+    display: flex;
+  }
+
+  /* Home */
+
+  #home {
+    grid-template-columns: 1fr 0.8fr;
+    gap: 20px;
+  }
+
+  /* About */
+
+  #about {
+    gap: 35px;
+  }
+
+  /* Process */
+
+  #process {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  /* Portfolio */
+
+  .portfoliodown {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Services */
+
+  #services {
+    gap: 30px;
+  }
+
+  /* Contact */
+
+  #contact {
+    gap: 35px;
+  }
+
+}
+
+
+/* =================================
+   13. MOBILE RESPONSIVE
+   768px and below
+================================= */
+
+@media screen and (max-width: 768px) {
+
+  section {
+    padding: 55px 25px;
+  }
+
+  /* Home */
+
+  #home {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .aboutmyself {
+    padding: 15px 0;
+    gap: 30px;
+  }
+
+  .myimage {
+    min-height: 300px;
+  }
+
+  .myimage img {
+    min-height: 300px;
+    max-height: 450px;
+  }
+
+  /* About */
+
+  #about {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .about-left img {
+    max-height: 400px;
+  }
+
+  /* Process */
+
+  #process {
+    grid-template-columns: 1fr;
+  }
+
+  .processright {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Portfolio */
+
+  .portfoliodown {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Services */
+
+  #services {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  /* Contact */
+
+  #contact {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* Footer */
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+}
+
+
+/* =================================
+   14. SMALL MOBILE RESPONSIVE
+   480px and below
+================================= */
+
+@media screen and (max-width: 480px) {
+
+  section {
+    padding: 45px 18px;
+  }
+
+  /* Navbar */
+
+  header nav {
+    padding: 10px 15px;
+  }
+
+  .nav2 {
+    gap: 8px;
+  }
+
+  .nav2 .logo {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+  }
+
+  .nav2 .logo p {
+    font-size: 21px;
+  }
+
+  .nav2 > div:last-child p {
+    font-size: 15px;
+  }
+
+  .menu-icon {
+    font-size: 25px;
+  }
+
+  /* Home */
+
+  .info h1 {
+    font-size: 32px;
+  }
+
+  .info p {
+    font-size: 15px;
+  }
+
+  .box {
+    grid-template-columns: 1fr;
+  }
+
+  .box > div {
+    padding: 15px;
+  }
+
+  /* About */
+
+  .about-right h2 {
+    font-size: 28px;
+  }
+
+  .about-right p {
+    font-size: 15px;
+  }
+
+  .social-media {
+    gap: 15px;
+  }
+
+  /* Process */
+
+  .processleft h2 {
+    font-size: 30px;
+  }
+
+  .processleft p {
+    font-size: 15px;
+  }
+
+  .processright {
+    grid-template-columns: 1fr;
+  }
+
+  .processright article {
+    padding: 25px;
+  }
+
+  /* Portfolio */
+
+  .portfoliodown {
+    grid-template-columns: 1fr;
+  }
+
+  .portfoliodown article img {
+    height: 210px;
+  }
+
+  .portfolioup {
+    margin-bottom: 35px;
+  }
+
+  .portfolioup p {
+    font-size: 15px;
+  }
+
+  /* Project Idea */
+
+  #projectidea {
+    min-height: 350px;
+  }
+
+  #projectidea h2 {
+    font-size: 28px;
+  }
+
+  #projectidea p {
+    font-size: 15px;
+  }
+
+  /* Services */
+
+  .service-left h2 {
+    font-size: 30px;
+  }
+
+  .service-card {
+    padding: 20px;
+  }
+
+  /* Contact */
+
+  .contact-left h2 {
+    font-size: 28px;
+  }
+
+  .contact-left > p {
+    font-size: 15px;
+  }
+
+  .contact-right form {
+    gap: 8px;
+  }
+
+  /* Footer */
+
+  footer {
+    padding: 30px 18px;
+  }
+
+  footer .nav1 {
+    gap: 12px;
+  }
+
+  footer .nav1 a {
+    font-size: 12px;
+  }
+
+}
+
+
+/* =================================
+   15. EXTRA SMALL MOBILE
+   360px and below
+================================= */
+
+@media screen and (max-width: 360px) {
+
+  header nav {
+    padding: 10px;
+  }
+
+  .nav2 .logo {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+  }
+
+  .nav2 > div:last-child p {
+    font-size: 13px;
+  }
+
+  .menu-icon {
+    font-size: 23px;
+  }
+
+  .info h1 {
+    font-size: 27px;
+  }
+
+  .about-right button {
+    padding: 11px 15px;
+    font-size: 13px;
+  }
+
+  .processright article {
+    padding: 20px;
+  }
+
+}

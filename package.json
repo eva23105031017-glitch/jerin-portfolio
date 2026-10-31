@@ -1,0 +1,13 @@
+{
+  "name": "vs.code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "start.js",
+ "scripts": {
+  "dev": "node --watch start.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
